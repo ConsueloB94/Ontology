@@ -1,0 +1,805 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77/"
+     xml:base="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77">
+        <rdfs:comment>Ontology like tassonomy about the Blockchain structure.
+The main blockchains are: Bitcoin, Ethereum and Neo.
+18/10/2023</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Account"/>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address"/>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Algorithm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Asset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Asset"/>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block"/>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Information"/>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Part -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Part">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Characteristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Characteristic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Digital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Digital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Fiat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Fiat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Material_Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Material_Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ModernAddress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ModernAddress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TraditionalAddress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Modern_Account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Modern_Account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Account"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Traditional_Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Physical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Physical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Signature_Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Signature_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StableCoin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StableCoin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Digital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Token -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Token">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Digital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Trading_Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Trading_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TraditionalAddress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TraditionalAddress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Traditional_Account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Traditional_Account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Valute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Valute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Digital"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#AMM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#AMM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Trading_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Accesibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Accesibility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Characteristic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#AddressMultiSignature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#AddressMultiSignature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TraditionalAddress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Availability_Of_Liquidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Availability_Of_Liquidity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Characteristic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#BNB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#BNB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Valute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#BTC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#BTC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Valute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Bitcoin_Address -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Bitcoin_Address">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Bitcoin_Block -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Bitcoin_Block">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Bitcoin_Body -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Bitcoin_Body">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Part"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Bitcoin_Header -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Bitcoin_Header">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Part"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#CELO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#CELO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Valute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Celo_Account -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Celo_Account">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Celo_Block -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Celo_Block">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#CodeHash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#CodeHash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Contract_Account -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Contract_Account">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Modern_Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Decentralized -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Decentralized">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Characteristic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Digix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Digix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StableCoin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Double_SHA256 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Double_SHA256">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ECDSA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ECDSA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Signature_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#EOA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#EOA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Traditional_Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ETH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ETH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Valute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#EUR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#EUR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Fiat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ease_Of_Use -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ease_Of_Use">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Characteristic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#EquityToken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#EquityToken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Token"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ethereum_Account -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ethereum_Account">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ethereum_Address -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ethereum_Address">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ethereum_Block -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ethereum_Block">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ethereum_Body -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ethereum_Body">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Part"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ethereum_Header -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ethereum_Header">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Part"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Euroc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Euroc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StableCoin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#GAS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#GAS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Digital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#GASPrice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#GASPrice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Digital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#GSDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#GSDC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Valute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Gold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Gold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Material_Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#HashFunction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#HashFunction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Height -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Height">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#MarkleRoot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#MarkleRoot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#NEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#NEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Token"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#NFT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#NFT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Token"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#NastedSegWithAddress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#NastedSegWithAddress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ModernAddress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#NativeSegWithAddress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#NativeSegWithAddress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ModernAddress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#NeoGas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#NeoGas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Token"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Neo_Account -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Neo_Account">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Traditional_Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Neo_Address -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Neo_Address">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Neo_Block -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Neo_Block">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Neo_Body -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Neo_Body">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Part"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Neo_Header -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Neo_Header">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Part"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#P2PKH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#P2PKH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TraditionalAddress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ParentRoot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ParentRoot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Paxos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Paxos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StableCoin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#PaymentsToken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#PaymentsToken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Token"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#PreviousHash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#PreviousHash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#QDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#QDC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Valute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#QDT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#QDT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Valute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Receiver_Address -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Receiver_Address">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#SHA256 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#SHA256">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Characteristic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#SecurityToken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#SecurityToken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Token"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Sender_Address -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Sender_Address">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Stacks_Block -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Stacks_Block">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Stasis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Stasis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StableCoin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StateRoot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StateRoot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StorageRoot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StorageRoot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TaprootAddress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TaprootAddress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#ModernAddress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Target_Difficulty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Target_Difficulty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Thether -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Thether">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StableCoin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Timestamp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Timestamp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TrueUSD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TrueUSD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StableCoin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TxRoot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#TxRoot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hash_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#USD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#USD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Fiat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#UtilityToken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#UtilityToken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Token"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Version -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Version">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block_Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Volatility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Volatility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Characteristic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#cUSD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#cUSD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#StableCoin"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

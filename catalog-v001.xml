@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77" uri="Ontologia_TesiMagistrale_BorziConsuelo_LM43.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1698102442991" name="duplicate:http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77/" uri="Ontologia_TesiMagistrale_BorziConsuelo_LM43.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1698102442991" name="duplicate:http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77/" uri="OntologiaTassonomica_TesiMagistrale.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1698102442991" name="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78" uri="Ontologia_Unita_Borzì_Magistrale_LM43.rdf"/>
+    </group>
+</catalog>
