@@ -2,17 +2,24 @@
 <rdf:RDF xmlns="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#"
      xml:base="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78"
      xmlns:con="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78/"
-     xmlns:scheme="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#scheme:"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:tax="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:untitled-ontology-78="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:info="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#info:"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:tax="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#">
+     xmlns:scheme="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#scheme:"
+     xmlns:untitled-ontology-78="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78">
         <owl:imports rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77"/>
-        <rdfs:comment>Some of possible uses of this technology. 
+        <info:developer>Borzì Consuelo (1000029528)
+LM-43  Text science for digital professions</info:developer>
+        <info:version>25-10-2023</info:version>
+        <rdfs:comment>Within this ontology it is possible to view:
+- The taxonomic ontology: focused on the structure of the blockchain in particular Bitcoin and Ethereum which are permissionless and Neo which is permissioned.
+- The data ontology: that presents some of the possible applications of Blockchain technology.
+Some of possible uses of this technology. 
 Sector:
 Finance
 Health
@@ -22,6 +29,29 @@ Metaverso
 Payment
 Game</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#info:developer -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#info:developer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#info:version -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#info:version"/>
     
 
 
@@ -44,7 +74,10 @@ Game</rdfs:comment>
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#acceptPaymentsWith -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#acceptPaymentsWith"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#acceptPaymentsWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Brand"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Digital"/>
+    </owl:ObjectProperty>
     
 
 
@@ -118,6 +151,8 @@ Game</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#hasLikePartner">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#isPartnerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Partner_Company"/>
     </owl:ObjectProperty>
     
 
@@ -126,6 +161,8 @@ Game</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#hasLikeProject">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#isAProjectOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Sector"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project"/>
     </owl:ObjectProperty>
     
 
@@ -228,13 +265,19 @@ Game</rdfs:comment>
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#mainPurposeIs -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#mainPurposeIs"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#mainPurposeIs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project_Action"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#mainUsesIs -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#mainUsesIs"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#mainUsesIs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project_Action"/>
+    </owl:ObjectProperty>
     
 
 
@@ -326,7 +369,9 @@ Game</rdfs:comment>
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Brand -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Brand"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Brand">
+        <rdfs:comment>It contains some brands that allow you to carry out purchase transactions with digital assets.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -402,13 +447,17 @@ Game</rdfs:comment>
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project">
+        <rdfs:comment>It contains some projects that use blockchains for various purposes and uses.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project_Action -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project_Action"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project_Action">
+        <rdfs:comment>Contains the purposes and uses of the projects described.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1886,7 +1935,9 @@ Regenerative Finance (ReFi) seeks to generate an ecosystem in which all its part
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Virtual_Kitten -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Virtual_Kitten"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Virtual_Kitten">
+        <rdf:type rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-78#Project"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1957,5 +2008,5 @@ Regenerative Finance (ReFi) seeks to generate an ecosystem in which all its part
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 

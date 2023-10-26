@@ -1342,13 +1342,23 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Account -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Account"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Account">
+        <rdfs:comment>Accounts in the blockchain are a way to identify and track transactions. Each account has a unique address, which is used to send and receive digital assets.
+
+Accounts in the blockchain are similar to bank accounts in that they allow users to store and transfer money. However, blockchain accounts are decentralized, meaning they are not controlled by a central authority.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Address">
+        <rdfs:comment>Blockchain addresses are a series of alphanumeric characters that are used to identify a blockchain account. Each blockchain account has a unique address, which is used to send and receive digital assets.
+
+Blockchain addresses are similar to IP addresses in that they are unique and identify a specific computer on the Internet. However, blockchain addresses are used to identify blockchain accounts, which are a way to store and transfer digital assets.
+
+Blockchain addresses consist of 26-35 alphanumeric characters.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1385,7 +1395,9 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Block">
+        <rdfs:comment>Blockchain blocks are units of data that contain information about transactions that have been performed on a blockchain network. Each block is linked to the previous block, forming a chain of blocks.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1418,6 +1430,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Cold_Wallet"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#DEX"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hot_Wallet"/>
+        <rdfs:comment>Centralized exchanges are managed by a single entity, which is responsible for the custody of users&apos; assets. These exchanges are generally more convenient and easier to use, but they also come with some risks, such as the possibility of fraud or theft.</rdfs:comment>
     </owl:Class>
     
 
@@ -1461,6 +1474,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Protocol"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Second_Level_Protocol"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Tolerance_Protocol"/>
+        <rdfs:comment>Consensus protocols are a set of rules that allow a network of nodes to reach agreement on a new block to add to the blockchain. Consensus protocols are fundamental to the functioning of blockchains, as they ensure that transactions are valid and that the blockchain is immutable.</rdfs:comment>
     </owl:Class>
     
 
@@ -1470,6 +1484,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
     <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#DEX">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Exchange"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Hot_Wallet"/>
+        <rdfs:comment>Decentralized exchanges are not operated by a single entity. Instead, they use a consensus system to ensure the security of transactions. Decentralized exchanges are generally considered more secure than centralized exchanges, but they can also be more complicated to use.</rdfs:comment>
     </owl:Class>
     
 
@@ -1478,6 +1493,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#DL_Hybrid">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Distribute_Ledger"/>
+        <rdfs:comment>Hybrid DLs combine elements of public and private DLs. They are often used by companies or organizations that want to maintain the privacy of some information, but also benefit from some of the advantages of public DLs, such as transparency and security.</rdfs:comment>
     </owl:Class>
     
 
@@ -1486,6 +1502,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#DL_Private">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Distribute_Ledger"/>
+        <rdfs:comment>Private DLs are managed by a single entity, such as a company or government. They are often used for applications that require a high level of security and confidentiality.</rdfs:comment>
     </owl:Class>
     
 
@@ -1494,6 +1511,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#DL_Public">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Distribute_Ledger"/>
+        <rdfs:comment>Public DLs are accessible to anyone with an Internet connection. They are often used for applications that require transparency and decentralization, such as digital currencies or product traceability.</rdfs:comment>
     </owl:Class>
     
 
@@ -1510,6 +1528,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Digital">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Asset"/>
+        <rdfs:comment>Digital assets are digital resources that can be stored, traded and used digitally. They are often built on blockchain technology, which provides a distributed and secure ledger of transactions.</rdfs:comment>
     </owl:Class>
     
 
@@ -1528,7 +1547,9 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Distribute_Ledger -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Distribute_Ledger"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Distribute_Ledger">
+        <rdfs:comment>A distributed ledger is a ledger that is shared and synchronized among multiple nodes in a network. The network nodes can be distributed around the world and are not controlled by a single central authority.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1546,7 +1567,9 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Exchange -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Exchange"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Exchange">
+        <rdfs:comment>An exchange is a platform that allows users to trade digital assets, such as cryptocurrencies, tokens and NFTs. Exchanges can be centralized or decentralized.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1573,6 +1596,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Algorithm"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Signature_Algorithm"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Trading_Algorithm"/>
+        <rdfs:comment>A hashing algorithm is a mathematical function that takes as input a piece of data of arbitrary length and produces an output of fixed length, called a hash value or digest. The hash value is unique to the input, but is not invertible.</rdfs:comment>
     </owl:Class>
     
 
@@ -1648,13 +1672,17 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Node -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Node"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Node">
+        <rdfs:comment>Nodes in the blockchain are computers that participate in the blockchain network. Nodes are responsible for storing, verifying and propagating transactions on the network.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Nonce -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Nonce"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Nonce">
+        <rdfs:comment>A nonce is an arbitrary number that is used only once in a cryptographic algorithm or protocol. Nonces are often used to avoid replay attacks, where a message is sent multiple times as if it were new.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1725,6 +1753,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Other_Chain"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Side_Chain"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Small_Chain"/>
+        <rdfs:comment>Second-level chains are solutions that are implemented on the main blockchain to improve performance, scalability, and efficiency.</rdfs:comment>
     </owl:Class>
     
 
@@ -1743,6 +1772,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
     <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Side_Chain">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Other_Chain"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Small_Chain"/>
+        <rdfs:comment>Side chains are independent blockchains that are connected to the main blockchain.</rdfs:comment>
     </owl:Class>
     
 
@@ -1752,6 +1782,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
     <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Signature_Algorithm">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Algorithm"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Trading_Algorithm"/>
+        <rdfs:comment>A signature algorithm is a method for verifying the identity of a sender and the integrity of the data being sent. A digital signature algorithm is a type of signature algorithm that uses asymmetric cryptography to create a digital signature.</rdfs:comment>
     </owl:Class>
     
 
@@ -1760,6 +1791,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Small_Chain">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Other_Chain"/>
+        <rdfs:comment>Small chains are lightweight blockchains that are linked to the main blockchain.</rdfs:comment>
     </owl:Class>
     
 
@@ -1780,7 +1812,9 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Stack -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Stack"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Stack">
+        <rdfs:comment>In blockchain, stacks refer to a combination of technologies that are used to create and deploy decentralized applications.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1828,6 +1862,7 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Trading_Algorithm">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Algorithm"/>
+        <rdfs:comment>A trading algorithm is a computer program that is used to execute transactions in a financial market. Trading algorithms can be used to automate trading activities, such as order execution, data analysis and risk management.</rdfs:comment>
     </owl:Class>
     
 
@@ -1858,7 +1893,9 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Transaction -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Transaction"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Transaction">
+        <rdfs:comment>A blockchain transaction is an event that changes the state of a blockchain. Transactions can be used to perform a variety of actions, such as transferring assets, recording agreements, or executing smart contracts.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1884,7 +1921,9 @@ The main blockchains are: Bitcoin, Ethereum and Neo.
 
     <!-- http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Wallet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Wallet"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Wallet">
+        <rdfs:comment>A wallet is a software or hardware device that allows you to store, send and receive cryptocurrencies. Wallets are essential for anyone who wants to use cryptocurrencies, as they allow you to control your coins.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -2143,7 +2182,7 @@ An example: S&amp;P 500</rdfs:comment>
         <untitled-ontology-77:hasAsAsset rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#BNB"/>
         <untitled-ontology-77:isCharacterizedBy rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Ease_Of_Use"/>
         <untitled-ontology-77:isCharacterizedByMore rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Availability_Of_Liquidity"/>
-        <untitled-ontology-77:isCharacterizedByMore rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#Binance"/>
+        <untitled-ontology-77:usesLikeAlgorithm rdf:resource="http://www.semanticweb.org/borzi/ontologies/2023/9/untitled-ontology-77#AMM"/>
         <untitled-ontology-77:action>Low_cost</untitled-ontology-77:action>
         <untitled-ontology-77:action>Trading</untitled-ontology-77:action>
         <untitled-ontology-77:vantageIs>Security</untitled-ontology-77:vantageIs>
